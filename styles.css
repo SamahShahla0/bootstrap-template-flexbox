@@ -156,12 +156,25 @@ a:hover{
 .about{
     display: flex;
     flex-direction: column;
-    padding-top: 35px;
+    padding-top: 30px;
     align-items: center;
     background-color: rgb(27, 188, 155);
 }
 .about-content{
     display: block;
+    color: white;
+    
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center !important;
+}
+.about-content h1{
+    display: block;
+    font-size: 3rem;
+    line-height: 2.75rem;
+    font-weight: bold;
     color: white;
     text-transform: uppercase;
     margin-block-start: 0.67em;
@@ -170,10 +183,28 @@ a:hover{
     margin-inline-end: 0px;
     text-align: center !important;
 }
-.about-content paragraphs{
+.paragraphs{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.about-content p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 .btn-xl {
