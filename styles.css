@@ -12,6 +12,8 @@ nav{
     background: rgb(45, 62, 80);
     height: 80px;
     width: 100%;
+    /*position: fixed;*/
+    /*z-index: 1;*/
 }
 label.logo{
     color: white;
@@ -238,6 +240,57 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
     overflow: visible;
     vertical-align: -0.125em;
 }
+ /*contact section*/
+ .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ .contact-content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+    align-items: center;
+ }
+ .contact-content h1{
+    display: block;
+    font-size: 3rem;
+    line-height: 2.75rem;
+    font-weight: bold;
+    color: rgb(46, 62, 78);
+    text-transform: uppercase;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center !important;
+ }
+ .contact form{
+    display: flex;
+    flex-direction: column;
+    margin:50px;
+ }
+ .contact form input{
+    border-bottom: 10px;
+    border-style: inset;
+    width: 50vw;
+    padding: 3%;
+    margin: 10px;
+ }
+
+ .contact form button{
+    color: white;
+    background-color: rgb(27, 188, 155) ;
+    width: 100px;
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: larger;
+    font-weight: lighter;
+ }
+
 
 /*media query*/
 @media (max-width: 952px){
