@@ -23,7 +23,7 @@ label.logo{
 }
 nav ul{
     float: right;
-    margin-right: 70px;
+    margin-right: 80px;
 }
 nav ul li{
     display: inline-block;
@@ -108,6 +108,12 @@ a:hover{
     nav ul li a{
         font-size: 16px;
     }
+    .hero{
+        font-size: smaller;
+    }
+    .hero h1{
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 858px){
@@ -136,3 +142,4 @@ a:hover{
         top: 80px;
     }
 }
+
