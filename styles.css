@@ -66,6 +66,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     padding-top: 35px;
+    padding-bottom: 35px;
     align-items: center;
 }
 .hero h1{
@@ -82,12 +83,13 @@ a:hover{
     text-align: center !important;
 }
 .hero img{
-    width: 15rem;
-    
+    width: 15rem;    
 }
+
 #line-image{
     width: 25rem;
 }
+
 .hero p{
     color: white;
     font-size: 2rem;
@@ -97,6 +99,46 @@ a:hover{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     text-align: center !important;
+}
+
+/* portfolio */
+.portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.portfolio-content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+    align-items: center;
+}
+.grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.row img{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin: 20px;
+}
+.row img:hover{
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    background-color: rgb(27, 188, 155); /* Black background with opacity */
+    z-index: 0.1; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
 }
 
 
