@@ -1,3 +1,7 @@
+/* many class shoul have been combined in 1 utility class such as "content" for every section 
+and h1 tag of every section, but didn't have time to think about shared classes and had repeated css,
+many tags needed to be adjusted to be reponsive, 
+*/
 *{
     padding: 0;
     margin: 0;
