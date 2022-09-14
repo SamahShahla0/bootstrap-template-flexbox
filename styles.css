@@ -283,7 +283,7 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
     margin: 10px;
  }
 
- .contact form button{
+ #submit{
     color: white;
     background-color: rgb(27, 188, 155) ;
     width: 100px;
@@ -293,7 +293,17 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
     border: none;
     font-size: larger;
     font-weight: lighter;
+    opacity: 0.6;
+    transition: 0.3s;
  }
+
+ #submit:hover{
+    opacity: 1;
+ }
+
+#submit:active {
+    padding: 3px;
+}
 
  textarea{
     border-bottom: 10px;
