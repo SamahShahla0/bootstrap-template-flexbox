@@ -52,3 +52,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+
+//from nw on this is my work and not from the template
