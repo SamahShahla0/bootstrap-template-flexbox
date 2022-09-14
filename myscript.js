@@ -19,7 +19,13 @@ send_btn.onclick = function validate(){
     console.log(error_div);
   }
 
-
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if(in_email.value.match(mailformat)){
+    var error_line2 = document.createTextNode("Email has wrong format");
+    error_div.appendChild(error_line2);
+    console.log(error_div);
+  }
+  
 
 }
 
