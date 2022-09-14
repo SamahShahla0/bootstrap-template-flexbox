@@ -51,8 +51,37 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+
+
+    /* from nw on this is my work and not from the template 
+      PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS 
+    */
+    const contactForm = document.querySelector('#contactForm');
+
+    contactForm.addEventListener('submit' , fetchcall() );
+
+    function fetchcall () {
+        //  GET FORM DATA
+        var data = new FormData(document.getElementById("contactForm"));
+        console.log(data);
+       
+        // FETCH
+        fetch("http://localhost/bootstrap-template/bootstrap-template-flexbox/bootstrap-template/add-user.php", { method: "POST", body: data })
+        .then(res => res.text())
+        .then((txt) => {
+          console.log(txt);
+        })
+        .catch((err) => { console.error(err); });
+        return false;
+      }
+
+
+
+
+
+
+
 });
 
 
 
-//from nw on this is my work and not from the template
