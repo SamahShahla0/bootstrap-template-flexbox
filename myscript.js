@@ -26,8 +26,8 @@ send_btn.onclick = function validate(){
     console.log(error_div);
   }
   
-
 }
+
 
 
 //var contact_section = document.querySelector("contact").appendChild(error_div);
