@@ -295,6 +295,14 @@ svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
     font-weight: lighter;
  }
 
+ textarea{
+    border-bottom: 10px;
+    border-style: inset;
+    width: 50vw;
+    padding: 3%;
+    margin: 10px;
+ }
+
 
 /*media query*/
 @media (max-width: 952px){
