@@ -21,11 +21,12 @@ window.addEventListener('DOMContentLoaded', event => {
         let users = await getUsers();
         let html = '';
         users.forEach(user => {
-            let htmlSegment = `<div class="user"> Row => 
-                                <h2> name: ${user.name}</h2>
-                                <h2>phone number: ${user.phone}</h2>
-                                <h2>message: ${user.message}</h2>
-                                <div><a href="email:${user.email}">${user.email}</a></div>
+            let htmlSegment = `<div class="user"> Row Start
+                                <h4> name: ${user.name}</h4>
+                                <h4>phone number: ${user.phone}</h4>
+                                <h4>message: ${user.message}</h4>
+                                <div>email:<a href="email:${user.email}">${user.email}</a></div><br><br> 
+                                Row End <br><hr/>
                             </div>`;
     
             html += htmlSegment;
