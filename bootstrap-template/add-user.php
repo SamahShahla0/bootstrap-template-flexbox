@@ -6,10 +6,10 @@ $email = $_POST["email"];
 $phonenumber = $_POST["phonenumber"];
 $message = $_POST["message"];
 
-$query = "INSERT INTO users(name, email, phonenumber, message) VALUE (?, ?)";
+$query = "INSERT INTO users(name, email, phonenumber, message) VALUE (?, ?, ?, ?)";
 
-$query = $mysqli->prepare("INSERT INTO articles(name, author) VALUE (?, ?)");
-$query->bind_param("ssds", $name, $email, $phonenumber, $message);
+$query = $mysqli->prepare("INSERT INTO users(name, email, phonenumber, message) VALUE (?, ?, ?, ?)");
+$query->bind_param("ssss", $name, $email, $phonenumber, $message);
 $query->execute();
 
 $response = [];
