@@ -9,7 +9,7 @@ $message = $_POST["message"];
 $query = "INSERT INTO users(name, email, phonenumber, message) VALUE (?, ?)";
 
 $query = $mysqli->prepare("INSERT INTO articles(name, author) VALUE (?, ?)");
-$query->bind_param("ss", $name, $author);
+$query->bind_param("ssds", $name, $email, $phonenumber, $message);
 $query->execute();
 
 $response = [];
