@@ -58,22 +58,20 @@ window.addEventListener('DOMContentLoaded', event => {
     */
     const contactForm = document.querySelector('#contactForm');
 
-    contactForm.addEventListener('submit' , fetchcall() );
-
-    function fetchcall () {
-        //  GET FORM DATA
-        var data = new FormData(document.getElementById("contactForm"));
-        console.log(data);
-       
-        // FETCH
-        fetch("http://localhost/bootstrap-template/bootstrap-template-flexbox/bootstrap-template/add-user.php", { method: "POST", body: data })
-        .then(res => res.text())
-        .then((txt) => {
-          console.log(txt);
-        })
-        .catch((err) => { console.error(err); });
-        return false;
-      }
+    contactForm.addEventListener('submit' ,() =>{
+            //  GET FORM DATA
+            var data = new FormData(document.getElementById("contactForm"));
+            console.log(data);
+        
+            // FETCH
+            fetch("http://localhost/bootstrap-template/bootstrap-template-flexbox/bootstrap-template/add-user.php", { method: "POST", body: data })
+            .then(res => res.text())
+            .then((txt) => {
+            console.log(txt);
+            })
+            .catch((err) => { console.error(err); });
+            return false;
+    });
 
 
 
