@@ -1,5 +1,4 @@
 window.addEventListener('DOMContentLoaded', event => {
-    var displaydiv = document.getElementById('users');
     console.log("hey heyyyyyyyy");
 
     /*fetch("http://localhost/bootstrap-template/bootstrap-template-flexbox/bootstrap-template/selectingAll.php")
@@ -7,9 +6,9 @@ window.addEventListener('DOMContentLoaded', event => {
     .then((txt) => {
       console.log(txt);
     })*/
-
+ 
     async function getUsers() {
-        let url = 'users.http://localhost/bootstrap-template/bootstrap-template-flexbox/bootstrap-template/selectingAll.php';
+        let url = 'http://localhost/bootstrap-template/bootstrap-template-flexbox/bootstrap-template/selectingAll.php';
         try {
             let res = await fetch(url);
             return await res.json();
@@ -32,7 +31,7 @@ window.addEventListener('DOMContentLoaded', event => {
             html += htmlSegment;
         });
     
-        let container = document.querySelector('.container');
+        let container = document.querySelector('#users');
         container.innerHTML = html;
     }
     
