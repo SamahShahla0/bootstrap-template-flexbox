@@ -69,8 +69,10 @@ window.addEventListener('DOMContentLoaded', event => {
             .then((txt) => {
             console.log(txt);
             })
+            console.log("done");
             .catch((err) => { console.error(err); });
             return false;
+
     });
 
 
