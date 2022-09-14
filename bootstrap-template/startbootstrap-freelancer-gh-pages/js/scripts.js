@@ -69,7 +69,29 @@ window.addEventListener('DOMContentLoaded', event => {
         xhr.send(data);
         return false;
     });
-
+/*<!-- (A) HTML FORM -->
+<form id="myForm" onsubmit="return fetchcall();">
+  <input type="text" name="name" value="Jon" required/>
+  <input type="email" name="email" value="jon@doe.com" required/>
+  <input type="submit" value="Save"/>
+</form>
+ 
+<!-- (B) JAVASCRIPT -->
+<script>
+function fetchcall () {
+  // (B1) GET FORM DATA
+  var data = new FormData(document.getElementById("myForm"));
+ 
+  // (B2) FETCH
+  fetch("0-dummy.php", { method: "POST", body: data })
+  .then(res => res.text())
+  .then((txt) => {
+    console.log(txt);
+  })
+  .catch((err) => { console.error(err); });
+  return false;
+}
+</script>*/
 });
 
 
