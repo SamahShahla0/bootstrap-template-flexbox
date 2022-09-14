@@ -59,10 +59,8 @@ window.addEventListener('DOMContentLoaded', event => {
     const contactForm = document.querySelector('#contactForm');
 
     contactForm.addEventListener('submit' ,() =>{
-        // GET FORM DATA
-        var data = new FormData(document.getElementById("myForm"));
         
-        // (B2) AJAX CALL
+        // AJAX CALL
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "http://localhost/bootstrap-template/bootstrap-template-flexbox/bootstrap-template/add-user.php");
         xhr.onload = function () {
