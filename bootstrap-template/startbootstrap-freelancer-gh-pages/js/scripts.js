@@ -59,16 +59,24 @@ window.addEventListener('DOMContentLoaded', event => {
     const contactForm = document.querySelector('#contactForm');
 
     contactForm.addEventListener('submit' ,() =>{
-        
+
+        fetch("http://localhost/bootstrap-template/bootstrap-template-flexbox/bootstrap-template/add-user.php", { method: "POST", body: data })
+        .then(res => res.text())
+        .then((txt) => {
+        console.log(txt);
+        })
+        .catch((err) => { console.error(err); });
+        return false;
+    });
         // AJAX CALL
-        var xhr = new XMLHttpRequest();
+        /*var xhr = new XMLHttpRequest();
         xhr.open("POST", "http://localhost/bootstrap-template/bootstrap-template-flexbox/bootstrap-template/add-user.php");
         xhr.onload = function () {
             console.log(this.response);
         };
         xhr.send(data);
-        return false;
-    });
+        return false;*/
+   
 /*<!-- (A) HTML FORM -->
 <form id="myForm" onsubmit="return fetchcall();">
   <input type="text" name="name" value="Jon" required/>
