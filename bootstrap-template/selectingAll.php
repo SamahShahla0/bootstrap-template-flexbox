@@ -5,7 +5,7 @@ Include CORS - how ? Allow Headers!
 
 include("connection.php");
 
-$query = $mysqli->prepare("SELECT name, author FROM articles");
+$query = $mysqli->prepare("SELECT * FROM users");
 $query->execute();
 $array = $query->get_result();
 
