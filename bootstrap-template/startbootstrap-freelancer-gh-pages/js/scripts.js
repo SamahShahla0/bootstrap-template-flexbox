@@ -56,9 +56,17 @@ window.addEventListener('DOMContentLoaded', event => {
     /* from nw on this is my work and not from the template 
       PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS PS 
     */
-    const contactForm = document.querySelector('#contactForm');
-
-    contactForm.addEventListener('submit' ,() =>{
+    const contactForm = document.getElementById('btn-submit');
+    console.log(contactForm);
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email"),value;
+    let phone = document.getElementById("phone").value;
+    let message = document.getElementById("message").value;
+    let testbtn=document.getElementById("test-btn");
+    console.log(testbtn);
+    testbtn.addEventListener('click', () => {console.log("hiiiii")});
+    let data = {"name": name, "email": email, "phone": phone, "message": message};
+    contactForm.addEventListener('click' ,() =>{
 
         fetch("http://localhost/bootstrap-template/bootstrap-template-flexbox/bootstrap-template/add-user.php", { method: "POST", body: data })
         .then(res => res.text())
